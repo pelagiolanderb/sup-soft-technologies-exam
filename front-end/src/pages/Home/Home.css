@@ -1,0 +1,105 @@
+.rental-homes-container * {
+  margin: 0;
+  padding: 0;
+}
+
+.rental-homes-container {
+  padding: 20px;
+}
+
+.rentals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.rental-homes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.search-container * {
+  margin: 0;
+  padding: 0;
+}
+
+.search-container label {
+  margin-right: .5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.search-container #search {
+  padding: .5rem;
+  font-size: 1rem;
+}
+
+.search-container .search-btn {
+  padding: .5rem .8rem;
+  border: none;
+  margin-left: .5rem;
+  background-color: rgb(0, 147, 64);
+  color: #fff;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+.rental-home-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.rental-home-card h2, .rental-home-card p, .rental-home-card .action-container {
+  margin-top: .5rem;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add button {
+  padding: 1rem 2rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all ease .5s;
+}
+
+.add button:hover {
+  transform: scale(1.3);
+}
+
+.action-container button {
+  padding: .4rem .8rem;
+  margin-right: .5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: .7rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.action-container .update-btn {
+  background-color: rgb(56, 182, 255);
+}
+
+.action-container .update-btn:hover {
+  background-color: rgb(56, 182, 200);
+}
+
+.action-container .delete-btn {
+  background-color: rgb(255, 87, 87);
+}
+
+.action-container .delete-btn:hover {
+  background-color: rgb(200, 87, 87);
+}
