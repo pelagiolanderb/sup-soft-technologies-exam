@@ -23,12 +23,13 @@ export const updateHome = async (id, homeData) => {
     console.log(`natatanggap : ${key}: ${value}`);
   }
   try {
-    const response = await axios.put(
+    const response = await axios.post(
       `${API_BASE_URL}/rentals/${id}`,
       homeData,
       {
         headers: {
           "Content-Type": "multipart/form-data",
+          "X-HTTP-Method-Override": "PUT"
         },
       }
     );

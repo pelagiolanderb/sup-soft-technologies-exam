@@ -42,7 +42,6 @@ const Home = () => {
   };
 
   const handleUpdateRental = (homeData) => {
-    console.log(homeData);
     setHomeData(homeData);
     setUpdate(true);
     setModalOpen(true);
@@ -75,7 +74,7 @@ const Home = () => {
               name="search-rental"
               id="search"
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)} // Update searchTerm on input change
+              onChange={(e) => setSearchTerm(e.target.value)}
             />
             <button className="search-btn" onClick={handleSearch}>
               Search
